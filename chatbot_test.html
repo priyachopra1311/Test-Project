@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="chatbot_test.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<button onclick="openForm()"><img src= "chat_icon.png"></button>
+
+<div class="form-popup" id="myForm">
+  <form action="chatbot_test.js" class="form-container">
+    <div class="top_header"></div>
+
+    <label for="firstname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstname" required>
+
+    <label for="lastname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastname" required>
+
+    <label for="mobileno"><b>Mobile no</b></label>
+    <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
+
+    <button type="send" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
