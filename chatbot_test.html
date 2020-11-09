@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="chatbot_test.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="chatbot_test.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="chatbot_test.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<button onclick="openForm()"><img src= "chat_icon.png"></button>
+<button class="open-button" onclick="openForm()"><img src= "chat_icon.png"> </button>
 
 <div class="form-popup" id="myForm">
-  <form action="chatbot_test.js" class="form-container">
-    <div class="top_header"></div>
+  <form action="#" class="form-container">
+      
+      <div class="top_header marginboxtopbtm">
+          <h2> Hi! <img src= "hi.png"></h2>
+          <p>We are here to help you..</p>
+      </div>
 
-    <label for="firstname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="firstname" required>
+      <div class="mid_block">
+        <div class="row">
+          <div class="col-sm-4">
+             <h2> <img src= "man.jpg" width="80" alt=""></h2>
+          </div>
+          <div class="col-sm-4">
+            <span>Enter the details in the below box and our team will reach you shortly! </span>
+          </div>
+        </div>  
+      </div>
+    
+      <div class="inner_form">
+          <label for="firstname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="firstname" required>
 
-    <label for="lastname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="lastname" required>
+          <label for="lastname"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lastname" required>
 
-    <label for="mobileno"><b>Mobile no</b></label>
-    <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
-
-    <button type="send" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <label for="mobileno"><b>Mobile no</b></label>
+          <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
+      </div>
+      <div class=btm_button>
+          <button type="send" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </div>
+      
   </form>
 </div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
 
 </body>
 </html>
