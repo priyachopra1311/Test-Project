@@ -70,8 +70,8 @@ overflow:hidden;
 }
 
 .top_header img{
-    width:18px;
-    height: 18px;
+    width:30px;
+    height: 30px;
     margin-left: 5px;
 }
 
@@ -90,10 +90,12 @@ overflow:hidden;
     float: left;
     width: 100%;
     padding-left: 15px;
-    background: greenyellow;
+    background: orangered;
+    opacity: 0.9;
     text-align: left;
     border-radius: 6px 6px 0 0;
     font-size: 16px;
+    color:white;
 }
 .top_header .say_hi{
     color:#ffffff;
@@ -121,19 +123,22 @@ overflow:hidden;
 
 .mid_block span{
   padding:20px;
-  display: block;
-  background: greenyellow;
+  display: flex;
+  background-color:  rgb(166, 208, 223);
   font-size: 15px;
+  color: darkslategray;
 }
 .open-button img {
   border:none;
-  width: 45px;
+  width: 70px;
   }
   
 .mid_block img{
+  display: flex;
   margin-left: none;
   padding: 10px;
   border-radius: 50%;
+  border: 1px solid lightblue;
 }
 
 .marginboxtopbtm {

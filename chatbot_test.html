@@ -14,43 +14,44 @@
 </head>
 <body>
 
-<button class="open-button" onclick="openForm()"><img src= "chat_icon.png"> </button>
-
+<button class="open-button" onclick="myFunction()"><img src= "chat_icon.png" id="chatid"> </button>
+<!-- <button class="btncancel" type="close-button" onclick="myFunction()"><img src= "close_icon.png"></button> -->
 <div class="form-popup" id="myForm">
+  <div class="top_header marginboxtopbtm">
+      <h2> Hi! <img src= "hi.png"></h2>
+      <p>We are here to help you....</p>
+  </div>
+
+  <div class="mid_block">
+      <div class="row">
+        <div class="col-md-4">
+          <h2> <img src= "man.jpg" width="80" alt=""></h2>
+        </div>
+        <div class="col-md-5">
+          <span>Enter the details in the below box and our team will reach you shortly!!!! </span>
+        </div>
+      </div>  
+  </div>
+
   <form action="#" class="form-container">
-      
-      <div class="top_header marginboxtopbtm">
-          <h2> Hi! <img src= "hi.png"></h2>
-          <p>We are here to help you..</p>
-      </div>
+         
+    <div class="inner_form">
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="firstname" required>
 
-      <div class="mid_block">
-        <div class="row">
-          <div class="col-sm-4">
-             <h2> <img src= "man.jpg" width="80" alt=""></h2>
-          </div>
-          <div class="col-sm-4">
-            <span>Enter the details in the below box and our team will reach you shortly! </span>
-          </div>
-        </div>  
-      </div>
-    
-      <div class="inner_form">
-          <label for="firstname"><b>First Name</b></label>
-          <input type="text" placeholder="Enter First Name" name="firstname" required>
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="lastname" required>
 
-          <label for="lastname"><b>Last Name</b></label>
-          <input type="text" placeholder="Enter Last Name" name="lastname" required>
-
-          <label for="mobileno"><b>Mobile no</b></label>
-          <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
-      </div>
+      <label for="mobileno"><b>Mobile no</b></label>
+      <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
+    </div>
       <div class=btm_button>
           <button type="send" class="btn">Send</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          
       </div>
       
   </form>
+  
 </div>
 
 </body>
