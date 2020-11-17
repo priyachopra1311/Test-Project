@@ -32,6 +32,7 @@ overflow:hidden;
 
 /* The popup form - hidden by default */
 .form-popup {
+  display: block;
   position: fixed;
   bottom: 130px !important;
   right: 30px !important;
@@ -47,17 +48,19 @@ overflow:hidden;
 /* Add styles to the form container */
 .form-container {
   max-width: 500px;
-  padding: 50px;
-  background-color: white;
+  margin-right: 60px;
+  margin-top: -10px;
+  border-radius: 20px;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
+  
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 22px 22px 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: lightblue;
 }
 
 /* When the inputs get focus, do something */
@@ -68,16 +71,21 @@ overflow:hidden;
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: blue;
   color: white;
-  padding: 16px 20px;
+  font-size: large;
+  padding: 5px;
   border: none;
   cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
+  width: 60%;
+  margin: 10px 40px 10px 90px;
   opacity: 0.8;
 }
 
+.form-container .btn img{
+  height: 40px;
+  margin: 5px 5px 0 5px;
+}
 .top_header img{
     width:30px;
     height: 30px;
@@ -86,7 +94,7 @@ overflow:hidden;
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color:rgb(54, 54, 129);
 }
 
 /* Add some hover effects to buttons */
@@ -99,7 +107,7 @@ overflow:hidden;
     float: left;
     width: 100%;
     padding-left: 15px;
-    background: orangered;
+    background: rgb(86, 86, 143);
     opacity: 0.9;
     text-align: left;
     border-radius: 6px 6px 0 0;
@@ -130,15 +138,10 @@ overflow:hidden;
     margin-left: 5px;
     }
 
-.col-md-8 {
-  background-color: lightblue;
-  display: flex;
-  font-size: 15px;
-  width:200px !important;
-}
-
 .mid_block img{
   display: flex;
+  margin-top: 20px;
+  margin-left: 5px;
   padding: 5px;
   border-radius: 60%;
   border: 1px solid lightblue;
@@ -151,7 +154,6 @@ overflow:hidden;
   }
   
 
-
 .marginboxtopbtm {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
@@ -160,6 +162,8 @@ overflow:hidden;
 .inner_form {
   display: block;
   background: lightblue;
+  float: right;
+  margin:10px -45px 10px 100px !important;
 }
 
 .img-start {
@@ -168,11 +172,62 @@ overflow:hidden;
 }
 
 .text-start {
+  font-size: 16px;
   float: left;
-  width: 250px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 20px;
+  background: lightblue;
 }
 
 .clear {
   clear: both;
+}
+
+.first_name .last_name .mobile_no{
+  color:grey;
+}
+
+@media (max-width: 657px) {
+  .form-popup {
+     flex-direction: column-reverse;
+  }
+}
+.text_terms p{
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  color: #818181;
+}
+
+.footer_tag{
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #ffffff !important;
+    border-top: 1px solid #eeeeee;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 6px 6px;
+    color: #818181 !important;
+}
+
+.first_name {
+  margin: 30px 20px -20px 20px;
+}
+
+.last_name{
+  margin: 5px 20px -20px 20px;
+}
+
+.mobile_no{
+  margin: 5px 20px -20px 20px;
+  
 }

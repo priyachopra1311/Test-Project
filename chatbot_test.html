@@ -17,7 +17,7 @@
 <div class="form-popup hide" id="myForm">
   <div class="top_header marginboxtopbtm">
       <h2> Hi! <img src= "hi.png"></h2>
-      <p>We are here to help you....</p>
+      <p>Let's start a text conversation.</p>
   </div>
 
   <div class="mid_block">
@@ -28,30 +28,44 @@
           <!-- </h2>
         </div>
         <div class="col-md-8"> -->
-          <span class="text-start">Enter the info below and we can talk over text. </span>
+          <span class="text-start">What’s your name and number so we may text you?</span>
         <!-- </div>
       </div>   -->
+      
   </div>
-  <div class="clear"></div>
+  <div class="clear"></div> 
   <form action="#" class="form-container">
          
     <div class="inner_form">
-      <label for="firstname"><b>First Name</b></label>
-      <input type="text" placeholder="Enter First Name" name="firstname" required>
+      <div class="first_name">
+        <label for="firstname"><b>First Name</b></label>
+        <input type="text" placeholder="______________________________" name="firstname" required>
+      </div>
 
-      <label for="lastname"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter Last Name" name="lastname" required>
+      <div class="last_name">
+        <label for="lastname"><b>Last Name</b></label>
+        <input type="text" placeholder="______________________________" name="lastname" required>
+      </div>
 
-      <label for="mobileno"><b>Mobile no</b></label>
-      <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
+      <div class="mobile_no">
+        <label for="mobileno"><b>Mobile no</b></label>
+        <input type="text" placeholder="______________________________" name="mobileno" required>
+      </div>
     </div>
     
     <div class=btm_button>
-      <button type="send" class="btn">Send</button>
+      <button type="send" class="btn">Send<img src="arrow.png"></button>
     </div>
   
   </form>
   
+    <div class="text_terms">
+      <p>By submitting you agree to <strong><u>our terms </u></strong> and to receive text messages at the number provided. Message/data rates apply.</p>
+    </div>
+
+    <div class="footer_tag">
+      <img src="zlogo.png"> Powered by Zingit
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="chatbot_test.js"></script>
