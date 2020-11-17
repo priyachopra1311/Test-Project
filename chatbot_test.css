@@ -1,0 +1,178 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+overflow:hidden;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button, .close-button {
+  z-index: 11;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: auto;
+  background: transparent;
+}
+
+.open-button:focus, .open-button:active, .close-button:focus, .close-button:active {
+  border:0 !important;
+  outline: 0 !important;
+}
+
+.hide{
+  display: none;
+}
+.form-popup::-webkit-scrollbar{
+  display:none;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  position: fixed;
+  bottom: 130px !important;
+  right: 30px !important;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  max-height: 500px;
+  overflow: auto;
+  width: 390px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  overflow-y: scroll;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 50px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.top_header img{
+    width:30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover, .close-button:hover {
+  opacity: 1;
+}
+
+.top_header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    background: orangered;
+    opacity: 0.9;
+    text-align: left;
+    border-radius: 6px 6px 0 0;
+    font-size: 16px;
+    color:white;
+}
+.top_header .say_hi{
+    color:#ffffff;
+    font-size:20px;
+    font-weight:600;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.top_header #pop_heading {
+    color:#ffffff;
+    padding-left: 15px;
+    font-size:12px;
+    font-weight:400;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+.top_header.say_hi img{
+    width:50px;
+    height: 50px;
+    margin-left: 5px;
+    }
+
+.col-md-8 {
+  background-color: lightblue;
+  display: flex;
+  font-size: 15px;
+  width:200px !important;
+}
+
+.mid_block img{
+  display: flex;
+  padding: 5px;
+  border-radius: 60%;
+  border: 1px solid lightblue;
+}
+
+.open-button img, .close-button img {
+  z-index: 100;
+  border:none;
+  width: 70px;
+  }
+  
+
+
+.marginboxtopbtm {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.inner_form {
+  display: block;
+  background: lightblue;
+}
+
+.img-start {
+  width: 55px;
+  float: left;
+}
+
+.text-start {
+  float: left;
+  width: 250px;
+  padding: 10px;
+}
+
+.clear {
+  clear: both;
+}

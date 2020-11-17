@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="chatbot_test.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<button class="open-button"><img src= "chat_icon.png" id="chatid"> </button>
+<button class="btncancel close-button hide"><img src= "close_icon.png" id="closeid"></button>
+<div class="form-popup hide" id="myForm">
+  <div class="top_header marginboxtopbtm">
+      <h2> Hi! <img src= "hi.png"></h2>
+      <p>We are here to help you....</p>
+  </div>
+
+  <div class="mid_block">
+      <!-- <div class="row">
+        <div class="col-md-3">
+          <h2>  -->
+            <img src= "man.jpg" class="img-start" alt="">
+          <!-- </h2>
+        </div>
+        <div class="col-md-8"> -->
+          <span class="text-start">Enter the info below and we can talk over text. </span>
+        <!-- </div>
+      </div>   -->
+  </div>
+  <div class="clear"></div>
+  <form action="#" class="form-container">
+         
+    <div class="inner_form">
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="firstname" required>
+
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="lastname" required>
+
+      <label for="mobileno"><b>Mobile no</b></label>
+      <input type="text" placeholder="Enter Mobile Number" name="mobileno" required>
+    </div>
+    
+    <div class=btm_button>
+      <button type="send" class="btn">Send</button>
+    </div>
+  
+  </form>
+  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="chatbot_test.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
