@@ -54,7 +54,7 @@ overflow:hidden;
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type=text] {
   
   width: 100%;
   padding: 15px;
@@ -64,14 +64,18 @@ overflow:hidden;
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text] {
   background-color: #ddd;
   outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 2px 5px;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: blue;
+  background-color: #56BABD;
   color: white;
   font-size: large;
   padding: 5px;
@@ -94,7 +98,7 @@ overflow:hidden;
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color:rgb(54, 54, 129);
+  background-color:#56BABD;
 }
 
 /* Add some hover effects to buttons */
@@ -107,7 +111,7 @@ overflow:hidden;
     float: left;
     width: 100%;
     padding-left: 15px;
-    background: rgb(86, 86, 143);
+    background: #56BABD;
     opacity: 0.9;
     text-align: left;
     border-radius: 6px 6px 0 0;
@@ -144,7 +148,6 @@ overflow:hidden;
   margin-left: 5px;
   padding: 5px;
   border-radius: 60%;
-  border: 1px solid lightblue;
 }
 
 .open-button img, .close-button img {
@@ -231,3 +234,25 @@ overflow:hidden;
   margin: 5px 20px -20px 20px;
   
 }
+
+.btn img{
+
+  width: 30px;
+
+}
+ /* Small Devices, Tablets*/ 
+ @media only screen and (max-width : 640px) {
+  .form-popup{
+  width: 320px;
+}
+.text-start {
+  float: right;
+  width: 200px;
+  padding: 5px;
+}
+.mid_block img {
+  margin-left: 25px;
+  }
+
+ }
+ 
