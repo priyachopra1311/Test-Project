@@ -1,7 +1,7 @@
 body{
-font-family: Arial, Helvetica, sans-serif;
-box-sizing: border-box;
-overflow:hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  overflow:hidden;
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
@@ -38,7 +38,7 @@ overflow:hidden;
   right: 30px !important;
   border: 3px solid #f1f1f1;
   z-index: 9;
-  max-height: 500px;
+  max-height: calc(100vh - 260px);
   overflow: auto;
   width: 390px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
@@ -55,29 +55,64 @@ overflow:hidden;
 
 /* Full-width input fields */
 .form-container input[type=text] {
-  
-  width: 100%;
-  padding: 15px;
-  margin: 22px 22px 22px 0;
-  border: none;
-  background: lightblue;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text] {
-  background-color: #ddd;
+  width: 160px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  background-color: #EFF7FE;
+  margin: 22px 16px 0 0;
+  transform-origin: bottom right;
+  z-index: 2;
+  padding: 0px 0px 10px 0px;
+  float: right;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  /*background-color: #ddd;
   outline: none;
   background: transparent;
   border: none;
   border-bottom: 1px solid grey;
   padding: 2px 5px;
+  width: 100%;
+  padding: 15px;
+  margin: 22px 22px 22px 0;
+  background: lightblue; */
 }
 
-/* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #56BABD;
+    font-family: Graphik, avenir next, avenir, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 190px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 0;
+    background-color: #56BABD;
+    transition: width .3s, height .3s, color .3s, background-color .3s, border-color .3s;
+    color: #fff;
+    border-color: #56BABD;
+    opacity: 1;
+    letter-spacing: 0.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Set a style for the submit/login button 
+.form-container .btn {
+  background-color: #0079c1;
   color: white;
-  font-size: large;
+  font-size: medium;
   padding: 5px;
   border: none;
   cursor: pointer;
@@ -85,11 +120,12 @@ overflow:hidden;
   margin: 10px 40px 10px 90px;
   opacity: 0.8;
 }
+*/
 
-.form-container .btn img{
-  height: 40px;
-  margin: 5px 5px 0 5px;
-}
+/*.form-container .btn img
+  
+}*/
+
 .top_header img{
     width:30px;
     height: 30px;
@@ -110,23 +146,16 @@ overflow:hidden;
     display: block;
     float: left;
     width: 100%;
-    padding-left: 15px;
-    background: #56BABD;
+    background: #0079c1 !important;
     opacity: 0.9;
     text-align: left;
     border-radius: 6px 6px 0 0;
     font-size: 16px;
     color:white;
+    padding: 0px 0px 15px 15px;
+    line-height: 0px;
 }
-.top_header .say_hi{
-    color:#ffffff;
-    font-size:20px;
-    font-weight:600;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+
 .top_header #pop_heading {
     color:#ffffff;
     padding-left: 15px;
@@ -156,17 +185,13 @@ overflow:hidden;
   width: 70px;
   }
   
-
-.marginboxtopbtm {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-}
-
 .inner_form {
   display: block;
-  background: lightblue;
+  background: #EFF7FE;
   float: right;
   margin:10px -45px 10px 100px !important;
+  border-radius: 8px 8px 3px 8px;
+  animation: innerBubbleGrow .5s ease forwards .5s;
 }
 
 .img-start {
@@ -174,16 +199,26 @@ overflow:hidden;
   float: left;
 }
 
+/*font-size: 16px;
+    font-weight: 400;
+    max-width: 222px;
+    color: #4f4f4f;
+    background-color: #F5F8FA;
+    border-radius: 0px 8px 8px 8px;
+    animation: outerBubbleGrow .4s ease forwards;
+    transform-origin: bottom left;*/
 .text-start {
   font-size: 16px;
+  color:#4f4f4f;
   float: left;
+  border-radius: 0px 8px 8px 8px;
   margin-top: 10px;
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-bottom: 10px;
   width: 300px;
-  padding: 20px;
-  background: lightblue;
+  padding: 15px;
+  background: #F5F8FA;
 }
 
 .clear {
@@ -223,21 +258,38 @@ overflow:hidden;
 }
 
 .first_name {
-  margin: 30px 20px -20px 20px;
+  margin: 20px 20px 5px 20px;
+  font-size: smaller;
+  padding-left: 20px;
+  color: #818181;
+}
+.first_name b {
+  font-weight: 400;
+  padding:0;
 }
 
 .last_name{
   margin: 5px 20px -20px 20px;
+  font-size: smaller;
+  padding-left: 20px;
+  color: #818181;
+}
+.last_name b {
+  font-weight: 400;
 }
 
 .mobile_no{
   margin: 5px 20px -20px 20px;
-  
+  font-size: smaller;
+  padding-left: 20px;
+  color: #818181;
 }
-
+.mobile_no b{
+  font-weight: 400;
+}
 .btn img{
 
-  width: 30px;
+  padding: 10px;
 
 }
  /* Small Devices, Tablets*/ 
