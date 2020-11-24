@@ -2,6 +2,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   overflow:hidden;
+  margin: 300px;
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
@@ -38,9 +39,9 @@ body{
   right: 30px !important;
   border: 3px solid #f1f1f1;
   z-index: 9;
-  max-height: calc(100vh - 260px);
+  max-height: 500px;
   overflow: auto;
-  width: 390px;
+  width: 370px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
   overflow-y: scroll;
 }
@@ -54,7 +55,7 @@ body{
 }
 
 /* Full-width input fields */
-.form-container input[type=text] {
+/*.form-container input[type=text] {
   width: 160px;
   position: relative;
   display: flex;
@@ -78,18 +79,18 @@ body{
   width: 100%;
   padding: 15px;
   margin: 22px 22px 22px 0;
-  background: lightblue; */
-}
+  background: lightblue; 
+}*/
 
 .form-container .btn {
     font-family: Graphik, avenir next, avenir, Helvetica, sans-serif;
     font-weight: 400;
     position: relative;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 10px 20px 5px 80px;
     width: 190px;
     height: 46px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     border-width: 2px;
     border-style: solid;
@@ -173,9 +174,8 @@ body{
 
 .mid_block img{
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 5px;
-  padding: 5px;
   border-radius: 60%;
 }
 
@@ -186,19 +186,99 @@ body{
   }
   
 .inner_form {
-  display: block;
+    width: 180px;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: #EFF7FE;
+    border-radius: 10px 10px 3px 10px;
+    margin: 20px -40px 20px 50px;
+    animation: innerBubbleGrow .5s ease forwards .5s;
+    transform-origin: bottom right;
+    z-index: 2;
+    padding: 15px 26px 16px 21px;
+    float: right;
+    box-sizing: content-box;
+}
+  /* display: block;
   background: #EFF7FE;
   float: right;
   margin:10px -45px 10px 100px !important;
   border-radius: 8px 8px 3px 8px;
   animation: innerBubbleGrow .5s ease forwards .5s;
+*/
+.text_form {
+    position: relative;
+    margin: .6rem 0;
+    opacity: 1;
+    animation: textFade .3s linear forwards .3s;
+}
+
+.form_name {
+    resize: none;
+    background-color: #EFF7FE !important;
+    border: 0;
+    color: #4f4f4f;
+    font-size: 14px !important;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    letter-spacing: 0.5px;
+    padding: 15px 0;
+    font-weight: 600 !important;
+    box-sizing: content-box;
+}
+
+.text_form label{
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  line-height: 16px;
+  pointer-events: none;
+  position: absolute;
+  /* top: 23px; */
+  transition: .2s ease;
+  white-space: nowrap;
+  z-index: 2;
+  min-width: 100px;
+  letter-spacing: 0.5px;
+}
+
+.text_input {
+  background-color: #c4c4c4;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .img-start {
   width: 55px;
   float: left;
 }
-
+.error_msg {
+    color: #e73e51;
+    font-weight: 600;
+    position: absolute;
+    bottom: 6px;
+    font-size: 12px;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 5px 0 5px 5px;
+    display: none;
+}
+.input_checkmark{
+  display: none;
+}
 /*font-size: 16px;
     font-weight: 400;
     max-width: 222px;
@@ -209,16 +289,17 @@ body{
     transform-origin: bottom left;*/
 .text-start {
   font-size: 16px;
-  color:#4f4f4f;
-  float: left;
+  color: #4f4f4f;
+  float: right;
   border-radius: 0px 8px 8px 8px;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 20px;
+  margin-right: 19px;
   margin-left: 5px;
   margin-bottom: 10px;
-  width: 300px;
+  width: 280px;
   padding: 15px;
   background: #F5F8FA;
+  font-weight: 400;
 }
 
 .clear {
@@ -256,7 +337,7 @@ body{
     border-radius: 0 0 6px 6px;
     color: #818181 !important;
 }
-
+/*
 .first_name {
   margin: 20px 20px 5px 20px;
   font-size: smaller;
@@ -286,7 +367,7 @@ body{
 }
 .mobile_no b{
   font-weight: 400;
-}
+}*/
 .btn img{
 
   padding: 10px;
@@ -307,4 +388,10 @@ body{
   }
 
  }
+ 
+ .top_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
  
