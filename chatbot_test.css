@@ -2,8 +2,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   overflow:hidden;
-  margin: 300px;
-}
+ }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button, .close-button {
@@ -27,7 +26,8 @@ body{
 .hide{
   display: none;
 }
-.form-popup::-webkit-scrollbar{
+
+.scrolling::-webkit-scrollbar{
   display:none;
 }
 
@@ -37,13 +37,18 @@ body{
   position: fixed;
   bottom: 130px !important;
   right: 30px !important;
-  border: 3px solid #f1f1f1;
   z-index: 9;
   max-height: 500px;
-  overflow: auto;
   width: 370px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-  overflow-y: scroll;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, .2);
+  
+}
+
+.scrolling {
+    width: 100%;
+    max-height: 390px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 /* Add styles to the form container */
@@ -97,10 +102,9 @@ body{
     border-radius: 4px;
     box-sizing: border-box;
     outline: 0;
-    background-color: #56BABD;
+    background-color: #0079c1;
     transition: width .3s, height .3s, color .3s, background-color .3s, border-color .3s;
     color: #fff;
-    border-color: #56BABD;
     opacity: 1;
     letter-spacing: 0.5px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -135,7 +139,7 @@ body{
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color:#56BABD;
+  background-color: #0079c1;
 }
 
 /* Add some hover effects to buttons */
@@ -172,6 +176,9 @@ body{
     margin-left: 5px;
     }
 
+.fixed-top {
+
+}
 .mid_block img{
   display: flex;
   margin-top: 30px;
@@ -390,8 +397,6 @@ body{
  }
  
  .top_header {
-  position: fixed;
   top: 0;
-  width: 100%;
   }
  
