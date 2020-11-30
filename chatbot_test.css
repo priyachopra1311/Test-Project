@@ -38,8 +38,8 @@ body{
   bottom: 130px !important;
   right: 30px !important;
   z-index: 9;
-  max-height: 500px;
-  width: 370px;
+  max-height: 490px;
+  width: 380px;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, .2);
   
 }
@@ -87,7 +87,8 @@ body{
   background: lightblue; 
 }*/
 
-.form-container .btn {
+.form-container .btn 
+{
     font-family: Graphik, avenir next, avenir, Helvetica, sans-serif;
     font-weight: 400;
     position: relative;
@@ -103,8 +104,8 @@ body{
     box-sizing: border-box;
     outline: 0;
     background-color: #0079c1;
-    transition: width .3s, height .3s, color .3s, background-color .3s, border-color .3s;
-    color: #fff;
+   /* transition: width .3s, height .3s, color .3s, background-color .3s, border-color .3s;*/
+    color: white;
     opacity: 1;
     letter-spacing: 0.5px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -132,9 +133,9 @@ body{
 }*/
 
 .top_header img{
-    width:30px;
-    height: 30px;
-    margin-left: 5px;
+    width:20px;
+    height: 20px;
+    margin-left: 2px;
 }
 
 /* Add a red background color to the cancel button */
@@ -145,6 +146,7 @@ body{
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover, .close-button:hover {
   opacity: 1;
+  color:white;
 }
 
 .top_header {
@@ -155,24 +157,28 @@ body{
     opacity: 0.9;
     text-align: left;
     border-radius: 6px 6px 0 0;
-    font-size: 16px;
-    color:white;
-    padding: 0px 0px 15px 15px;
+    font-size: 13px;
+    color: white;
+    padding: 0px 0px 10px 10px;
     line-height: 0px;
 }
-
-.top_header #pop_heading {
-    color:#ffffff;
-    padding-left: 15px;
-    font-size:12px;
-    font-weight:400;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.5px;
-    margin-bottom: 30px;
+.top_header h2{
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.top_header p{
+  color: #ffffff;
+  padding-left: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
 .top_header.say_hi img{
-    width:50px;
-    height: 50px;
+    width:30px;
+    height: 30px;
     margin-left: 5px;
     }
 
@@ -239,11 +245,13 @@ body{
     padding: 15px 0;
     font-weight: 600 !important;
     box-sizing: content-box;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .text_form label{
   color: grey;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   left: 0;
   line-height: 16px;
@@ -376,9 +384,7 @@ body{
   font-weight: 400;
 }*/
 .btn img{
-
   padding: 10px;
-
 }
  /* Small Devices, Tablets*/ 
  @media only screen and (max-width : 640px) {
@@ -395,7 +401,6 @@ body{
   }
 
  }
- 
  .top_header {
   top: 0;
   }

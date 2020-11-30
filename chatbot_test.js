@@ -15,6 +15,23 @@
 //       $("#chatid").attr("src", "chat_icon.png");
 //   }
 // }
+// window.onscroll = function() {myFunction()};
+
+// // Get the header
+// var header = document.getElementById("head_top");
+
+// // Get the offset position of the navbar
+// var sticky = header.offsetTop;
+
+// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
+
 $('#chatid').click(function() {
   $('#myForm').removeClass("hide");
   $('.close-button').removeClass("hide");
@@ -28,19 +45,10 @@ $('#closeid').click(function() {
   $('.open-button').removeClass("hide");
 });
 
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("head_top");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
   }
 }
