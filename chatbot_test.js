@@ -36,6 +36,8 @@ $('#chatid').click(function() {
   $('#myForm').removeClass("hide");
   $('.close-button').removeClass("hide");
   $('.open-button').addClass("hide");
+  $('.prompt_msg').addClass("hide");
+  $('.close_btn').addClass("hide");
 });
 
 $('#closeid').click(function() {
@@ -43,7 +45,21 @@ $('#closeid').click(function() {
   $('#myForm').addClass("hide");
   $('.close-button').addClass("hide");
   $('.open-button').removeClass("hide");
+  $('.prompt_msg').removeClass("hide");
+  $('.close_btn').removeClass("hide");
+  
 });
+
+document.getElementById("start_prompt").onmouseover = function() {mouseOver()};
+document.getElementById("start_prompt").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("closeme").style.display = "block";
+}
+
+function mouseOut() {
+  document.getElementById("closeme").style.display= "none";
+}
 
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
