@@ -32,22 +32,50 @@
 //   }
 // }
 
+$.fn.animateRotate = function(angle, duration, easing, complete) {
+  return this.each(function() {
+    var $elem = $(this);
+
+    $({deg: 0}).animate({deg: angle}, {
+      duration: duration,
+      easing: easing,
+      step: function(now) {
+        $elem.css({
+           transform: 'rotate(' + now + 'deg)'
+         });
+      },
+      complete: complete || $.noop
+    });
+  });
+};
+
+
 $('#chatid').click(function() {
   $('#myForm').removeClass("hide");
-  $('.close-button').removeClass("hide");
-  $('.open-button').addClass("hide");
+  // $('.close-button').removeClass("hide");
+  // $('.open-button').addClass("hide");
   $('.prompt_msg').addClass("hide");
-  $('.close_btn').addClass("hide");
+  // $('.close_btn').addClass("hide");
   $('#start_prompt').addClass("hide");
+  $('#chatid').animateRotate(360,200,null,function(){
+    $('#chatid').parent().addClass('hide');
+    $('#closeid').parent().removeClass('hide');
+    })
+  $('html, body').animate({
+    scrollTop: $('.inner_form').offset().bottom + 150
+}, 500);
 });
 
 $('#closeid').click(function() {
   $('#myForm').addClass("hide");
-  $('.close-button').addClass("hide");
-  $('.open-button').removeClass("hide");
+  // $('.close-button').addClass("hide");
+  // $('.open-button').removeClass("hide");
   $('.prompt_msg').removeClass("hide");
-  $('.close_btn').removeClass("hide");
-  
+  // $('.close_btn').removeClass("hide");
+  $('#closeid').animateRotate(360,250,null,function(){
+    $('#closeid').parent().addClass('hide');
+    $('#chatid').parent().removeClass('hide');
+    })
 });
 
 document.getElementById("start_prompt").onmouseover = function() {mouseOver()};
@@ -65,10 +93,6 @@ $('#closeme').click(function(){
   $('#start_prompt').addClass("hide");
 });
 
-function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
+
+
+
