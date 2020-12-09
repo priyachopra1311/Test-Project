@@ -1,7 +1,8 @@
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
   overflow:hidden;
+  line-height: 0;
  }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
@@ -12,7 +13,7 @@ body{
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 28px;
+  bottom: 15px;
   right: 28px;
   width: auto;
   background: transparent;
@@ -35,7 +36,7 @@ body{
   align-items: flex-end;
   display: none;
   flex-direction: column;
-  margin: 16px;
+  margin: -14px 10px 0px 0px;
   width: 100%;
   max-width: 317px;
   padding-top: 20px;
@@ -58,6 +59,7 @@ body{
     opacity: 1;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .24);
     letter-spacing: 0.5px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .prompt_msg{
@@ -107,18 +109,20 @@ body{
     max-width: 190px;
     color: #828282;
     letter-spacing: 0.5px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
   display: block;
   position: fixed;
-  bottom: 130px !important;
+  bottom: 122px !important;
   right: 30px !important;
   z-index: 9;
-  max-height: 490px;
-  width: 380px;
+  max-height: 497px;
+  width: 344px;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, .2);
+  background: #EFF4F8;
   
 }
 
@@ -128,9 +132,8 @@ body{
 
 .scrolling {
     width: 100%;
-    max-height: 390px;
+    max-height: 451px;
     overflow: hidden;
-    overflow-y: scroll;
 }
 
 /* Add styles to the form container */
@@ -144,13 +147,13 @@ body{
 
 .form-container .btn 
 {
-    font-family: Graphik, avenir next, avenir, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 400;
     position: relative;
     cursor: pointer;
-    margin: 10px 20px 5px 80px;
-    width: 190px;
-    height: 46px;
+    margin: 10px 48px;
+    width: 240px;
+    height: 38px;
     font-weight: 500;
     font-size: 15px;
     border-width: 2px;
@@ -161,9 +164,9 @@ body{
     background-color: #0079c1;
    /* transition: width .3s, height .3s, color .3s, background-color .3s, border-color .3s;*/
     color: white !important;
-    opacity: .6;
+    opacity: .2;
     letter-spacing: 0.5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +203,7 @@ body{
     border-radius: 6px 6px 0 0;
     font-size: 13px;
     color: white;
-    padding: 0px 0px 10px 10px;
+    padding: -1px 0px 5px 10px;
     line-height: 0px;
 }
 /*.top_header h2{
@@ -210,10 +213,10 @@ body{
 }*/
 .top_header p {
   color: #ffffff;
-  padding: 40px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   text-align: center;
@@ -258,31 +261,32 @@ body{
   }
   
 .inner_form {
-    width:260px;
-    opacity: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    background-color: #EFF7FE;
-    border-radius: 10px 10px 3px 10px;
-    margin: 20px -40px 20px 50px;
-    animation-name: innerBubbleGrow;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-    transform-origin: bottom right;
-    z-index: 2;
-    padding: 15px 26px 16px 21px;
-    float: right;
-    box-sizing: content-box;
+  width: 214px;
+  opacity: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  background-color: #ffffff;
+  border-radius: 10px 10px 3px 10px;
+  margin: 5px -40px 20px 50px;
+  animation-name: innerBubbleGrow;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  transform-origin: bottom right;
+  z-index: 2;
+  padding: 36px 33px 4px 25px;
+  float: right;
+  box-sizing: content-box;
+  height: 173px;
+  font-family: "Times New Roman", Times, serif;
+  
 }
-
-
 
 @keyframes innerBubbleGrow
 {
@@ -323,23 +327,23 @@ body{
 }*/
 
 .form_name {
-    resize: none;
-    background-color: #EFF7FE !important;
-    border: 0;
-    color: #4f4f4f;
-    font-size: 14px !important;
-    height: 30px;
-    line-height: 30px;
-    outline: 0;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    letter-spacing: 0.5px;
-    padding: 15px 0;
-    font-weight: 600 !important;
-    box-sizing: content-box;
-    margin-top: 10px;
-    margin-bottom: -10px;
+  resize: none;
+  background-color: #FFFFFF !important;
+  border: 0;
+  color: #4f4f4f;
+  font-size: 14px !important;
+  height: 30px;
+  line-height: 30px;
+  outline: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  letter-spacing: 0.5px;
+  padding: 0px 0;
+  font-weight: 600 !important;
+  box-sizing: content-box;
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 
 .text_form label{
@@ -373,8 +377,9 @@ body{
   position:relative;
   height:50px;
   overflow: hidden;
+  margin: 0px 0px 20px 0px;
 }
-
+/* 
 .text_form input{
   width:100%;
   height:100%;
@@ -426,7 +431,7 @@ body{
 .text_form input:focus + .label-name::after, .text_form input:valid + .label-name::after{
   transform: translateX(0%);
 
-}
+} */
 
 
 
@@ -458,19 +463,21 @@ body{
     animation: outerBubbleGrow .4s ease forwards;
     transform-origin: bottom left;*/
 .text-start {
-    font-size: 14px;
-    color: #4f4f4f;
-    float: right;
-    border-radius: 10px 10px 10px 3px;
-    margin-top: 10px;
-    margin-right: 19px;
-    margin-left: 2px;
-    margin-bottom: 10px;
-    width: 330px;
-    padding: 15px;
-    background: #F5F8FA;
-    font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #4f4f4f;
+  float: right;
+  border-radius: 10px 10px 10px 3px;
+  margin-top: 15px;
+  margin-right: 19px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  width: 303px;
+  padding: 15px 5px 10px 10px;
+  background: #ffffff;
+  font-weight: 500;
 }
+
 
 .clear {
   clear: both;
@@ -480,17 +487,15 @@ body{
   color:grey;
 }
 
-@media (max-width: 657px) {
-  .form-popup {
-     flex-direction: column-reverse;
-  }
-}
+
 .text_terms p{
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
-  padding: 10px;
+  padding: 30px 5px 10px 60px;
   color: #818181;
+  font-family: "Times New Roman", Times, serif;
 }
+
 
 .text_terms {
 
@@ -511,19 +516,19 @@ body{
 }
 
 .footer_tag{
-    float: left;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    background: #0079c1 !important;
-    border-top: 1px solid #eeeeee;
-    font-size: 11px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 0 0 6px 6px;
-    color: #f4f6f7 !important;
+  float: left;
+  width: 100%;
+  height: 25px;
+  line-height: 40px;
+  background: #0079c1 !important;
+  /* border-top: 1px solid #eeeeee; */
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+  color: #f4f6f7 !important;
 }
 /*
 .first_name {
@@ -556,9 +561,9 @@ body{
 .mobile_no b{
   font-weight: 400;
 }*/
-.btn img{
-  padding: 10px;
-}
+
+
+
 /* /* Small Devices, Tablets/ 
  @media only screen and (max-width : 640px) {
   .form-popup{
@@ -580,3 +585,14 @@ body{
   top: 0;
   }
  
+
+  /* font-size: 10px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #818181;
+    /* margin: 0px 10px 20px 60px;
+    width: 250px;
+    display: block; */ 
+    /* letter-spacing: 0.2px;
+    line-height: 16px; */
+    /* height: 46px;
